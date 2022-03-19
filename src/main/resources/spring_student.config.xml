@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <!--property injection or setter injection-->
+    <bean class="com.dependencyinjection.Student" id="studentBeanId">
+        <property name="studentId" value="123" />
+        <property name="studentName" value="Bhavin" />
+    </bean>
+
+    <bean class="com.dependencyinjection.Student" id="studentBeanId2">
+        <constructor-arg name="studentId" value="234" />
+        <constructor-arg name="studentName" value="Abhishek" />
+
+    </bean>
+
+</beans>
