@@ -10,10 +10,11 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
         <property name="studentName" value="Bhavin" />
     </bean>
 
-    <bean class="com.dependencyinjection.Student" id="studentBeanId2">
-        <constructor-arg name="studentId" value="234" />
-        <constructor-arg name="studentName" value="Abhishek" />
 
+    <!--    Example of Constructor injection-->
+    <bean class="com.dependencyinjection.Student" id="studentBeanId2">
+        <constructor-arg name="studentId" value="234" type="int"/>
+        <constructor-arg name="studentName" value="Abhishek" type="String"/>
     </bean>
 
 </beans>

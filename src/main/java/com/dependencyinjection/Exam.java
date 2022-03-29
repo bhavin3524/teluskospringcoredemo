@@ -11,7 +11,8 @@ public class Exam {
 
 
         Student student2 = studentContext.getBean("studentBeanId2", Student.class);
-        System.out.println(student2);
+        System.out.println(student2.getStudentName());
+        System.out.println(student2.getStudentId());
     }
 
 

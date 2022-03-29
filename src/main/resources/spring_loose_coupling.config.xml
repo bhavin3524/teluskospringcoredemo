@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean class="com.loosecoupling.ScienceCheat" id="scienceCheatId" />
+
+    <bean class="com.loosecoupling.MathCheat" id="mathCheatId"  />
+
+    <bean class="com.loosecoupling.JavaCheatSheet" id="javaCheatId" />
+
+     <bean class="com.loosecoupling.Student" id="looseCouplingStudent">
+         <property name="cheat" ref="javaCheatId" />
+     </bean>
+
+</beans>
